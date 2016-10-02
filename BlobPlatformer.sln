@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{8A6619BA-1A12-BD37-B9BA-68DFEA357B54}") = "BlobPlatformer", "Assembly-CSharp.csproj", "{058F200A-590F-4A3B-A4F1-C054F2F93062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{058F200A-590F-4A3B-A4F1-C054F2F93062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058F200A-590F-4A3B-A4F1-C054F2F93062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058F200A-590F-4A3B-A4F1-C054F2F93062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058F200A-590F-4A3B-A4F1-C054F2F93062}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
