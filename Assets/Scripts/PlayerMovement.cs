@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate() {
 		grounded = Physics2D.OverlapCircle (floorDetector.position, groundRadius, whatIsGround);
 		animator.SetBool ("grounded", grounded);
+
+
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, 0.0f);
 
@@ -51,9 +53,11 @@ public class PlayerMovement : MonoBehaviour {
 		if (moveHorizontal >= 0) {
 			spriteRenderer.flipX = false;
 		}
-	
 
-		rb.velocity = (movement * speed);
+		rb.AddForce (movement * speed);
+		if (grounded && Input.GetButton ("Jump")) {
+			rb.AddForce (new Vector2 (0, 70f));
+		}
 	}
 
 	void flip() {
