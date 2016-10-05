@@ -26,7 +26,7 @@ public class OnPickup : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (col.IsTouching (player)) {
-			print ("touching");
+			//print ("touching");
 			Destroy (gameObject);
 		}
 
