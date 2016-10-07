@@ -3,6 +3,7 @@ using System.Collections;
 
 public class OnPickup : MonoBehaviour {
 
+
 	private GameController gameController;
 	public Collider2D player;
 	private Collider2D col;
@@ -28,6 +29,7 @@ public class OnPickup : MonoBehaviour {
 		if (col.IsTouching (player)) {
 			//print ("touching");
 			Destroy (gameObject);
+			gameController.incrementScore(10);
 		}
 
 	}

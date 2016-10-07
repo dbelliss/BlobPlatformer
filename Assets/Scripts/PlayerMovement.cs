@@ -29,18 +29,9 @@ public class PlayerMovement : MonoBehaviour {
 		animator = GetComponent<Animator> ();
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	void FixedUpdate() {
-		print ("notdead");
-		if (isDead) {
-			print ("dead");
-			return;
-		}
+		
 		grounded = Physics2D.OverlapCircle (floorDetector.position, groundRadius, whatIsGround);
 		animator.SetBool ("grounded", grounded);
 
