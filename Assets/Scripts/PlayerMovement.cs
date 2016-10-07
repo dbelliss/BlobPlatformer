@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class PlayerMovement : MonoBehaviour {
 
 	public float speed;
@@ -18,6 +19,9 @@ public class PlayerMovement : MonoBehaviour {
 	public Transform floorDetector;
 	public LayerMask whatIsGround;
 
+	//For endgame
+	public static bool isDead = false;
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
@@ -32,6 +36,11 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
+		print ("notdead");
+		if (isDead) {
+			print ("dead");
+			return;
+		}
 		grounded = Physics2D.OverlapCircle (floorDetector.position, groundRadius, whatIsGround);
 		animator.SetBool ("grounded", grounded);
 
