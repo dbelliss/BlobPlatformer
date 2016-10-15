@@ -5,11 +5,11 @@ public class cameraMovement : MonoBehaviour {
 
 	Vector3 displacement;
 	public Transform player;
-	private Transform camera;
+	private Transform mainCamera;
 	// Use this for initialization
 	void Start () {
-		camera = GetComponent<Transform> ();
-		displacement = camera.position - player.position;
+        mainCamera = GetComponent<Transform> ();
+		displacement = mainCamera.position - player.position;
 	}
 	
 	// Update is called once per frame
@@ -18,6 +18,9 @@ public class cameraMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		camera.position =  (displacement + player.position);
+        if (player)
+        {
+            mainCamera.position = (displacement + player.position);
+        }
 	}
 }
