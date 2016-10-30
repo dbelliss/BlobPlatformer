@@ -62,10 +62,11 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        // rb.AddForce (movement * speed);
-        if (moveHorizontal < 0.1)
+        if (moveHorizontal < 0)
+        {
             transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);
-        else if (moveHorizontal > 0.1)
+        }
+        else if (moveHorizontal > 0)
         {
             transform.Translate(movement * moveSpeed * Time.deltaTime, Space.World);
         }
