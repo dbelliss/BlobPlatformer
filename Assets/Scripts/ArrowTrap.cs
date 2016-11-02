@@ -8,12 +8,12 @@ public class ArrowTrap : MonoBehaviour {
 	public float range = 20.0f; //range of detection
 	public float fireRate = 1.0f; //arrows per second
 	public float arrowSpeed = -1f; //Speed of arrow to shoot
-	public float arrowDirection = 0f;
 
 	bool isShooting = false;
 	// Use this for initialization
 	void Start () {
-			StartCoroutine (ShootArrow ());
+		StartCoroutine (ShootArrow ());
+
 	}
 	// Update is called once per frame
 	void Update () {
@@ -26,9 +26,9 @@ public class ArrowTrap : MonoBehaviour {
 		if (alwaysShoot == true) {
 			return;
 		}//If always shooting, just return
-
-		RaycastHit2D hit = Physics2D.Raycast(shootPoint.position, Vector2.left, range, 1 << 8); //raycast to the left
-		Debug.DrawRay(shootPoint.position, Vector2.left * range, Color.green);// show ray in scene view
+		float angle = transform.rotation.eulerAngles.z/ 180 * Mathf.PI;
+		RaycastHit2D hit = Physics2D.Raycast(shootPoint.position, new Vector3 (Mathf.Cos (angle), Mathf.Sin (angle),  0), range, 1 << 8); //raycast to the left
+		Debug.DrawRay(shootPoint.position, new Vector3 (Mathf.Cos (angle), Mathf.Sin (angle),  0) * range, Color.green);// show ray in scene view
 		if (hit) {
 				isShooting = true;
 		}//if raycast hits player, begin shooting if not already shooting
@@ -51,7 +51,7 @@ public class ArrowTrap : MonoBehaviour {
 				ArrowMovement arr = go.GetComponent<ArrowMovement> ();
 				Debug.Log (arr);
 				arr.speed = arrowSpeed; //speed to shoot arrows
-				arr.angle = arrowDirection; //angle to shoot arrows
+				arr.angle = transform.rotation.eulerAngles.z; //angle to shoot arrows
 			}
 			yield return new WaitForSeconds (1/fireRate);
 		}

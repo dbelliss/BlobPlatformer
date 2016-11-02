@@ -23,7 +23,6 @@ public class ArrowMovement : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		if (moving) {
-			print (speed);
 			transform.position = (transform.position + direction * speed);
 		}//If hasn't hit something
 	}
