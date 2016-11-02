@@ -5,7 +5,7 @@ public class ArrowTrap : MonoBehaviour {
 	public Transform shootPoint;
 	public GameObject Arrow;
 	public bool alwaysShoot = false;
-
+	public float range = 20.0f;
 	bool isShooting = false;
 	// Use this for initialization
 	void Start () {
@@ -23,8 +23,8 @@ public class ArrowTrap : MonoBehaviour {
 			return;
 		}//If always shooting, just return
 
-		RaycastHit2D hit = Physics2D.Raycast(shootPoint.position, Vector2.left, Mathf.Infinity, 1 << 8); //raycast to the left
-		//Debug.DrawRay(transform.position, Vector2.left, Color.green); show ray in scene view
+		RaycastHit2D hit = Physics2D.Raycast(shootPoint.position, Vector2.left, range, 1 << 8); //raycast to the left
+		Debug.DrawRay(shootPoint.position, Vector2.left * range, Color.green);// show ray in scene view
 		if (hit) {
 				isShooting = true;
 		}//if raycast hits player, begin shooting if not already shooting
