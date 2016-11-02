@@ -29,9 +29,14 @@ public class PlayerDamaged : MonoBehaviour {
 			Destroy (gameObject);
 			PlayerMovement.isDead = true;
 		}
+
+	}
+
+
+	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.tag == "Arrow") {
 			Destroy (gameObject);
 			PlayerMovement.isDead = true;
-		}
+		}//If player is hit by arrow
 	}
 }
