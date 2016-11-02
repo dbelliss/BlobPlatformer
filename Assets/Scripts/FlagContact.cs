@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class FlagContact : MonoBehaviour {
-	Animation animate;
+//	Animation animate;
 	private GameController gameController;
 	public Collider2D player;
 	private Collider2D col;
 	Animator anim;
 	// Use this for initialization
 	void Start () {
-		animate = GetComponent<Animation> ();
+	//	animate = GetComponent<Animation> ();
 		anim = GetComponent<Animator> ();
 		GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
 		if (gameControllerObject != null)
@@ -35,11 +35,10 @@ public class FlagContact : MonoBehaviour {
 	}
 
 	private IEnumerator nextLevel() {
-		print ("test");
 		yield return new WaitForSeconds(2);
-		int i = Application.loadedLevel;
-		print("test2");
-		Application.LoadLevel(i + 1);
+		Scene scene = SceneManager.GetActiveScene ();
+		int i = scene.buildIndex;		
+		SceneManager.LoadScene(i + 1);
 	}
 
 }
