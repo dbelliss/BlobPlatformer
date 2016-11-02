@@ -29,5 +29,9 @@ public class PlayerDamaged : MonoBehaviour {
 			Destroy (gameObject);
 			PlayerMovement.isDead = true;
 		}
+		if (coll.gameObject.tag == "Arrow") {
+			Destroy (gameObject);
+			PlayerMovement.isDead = true;
+		}
 	}
 }
