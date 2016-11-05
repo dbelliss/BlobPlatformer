@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class EngagingSensor : MonoBehaviour {
-    private ZombieAi zombie;
+    private FollowAi follow;
 
 	// Use this for initialization
 	void Start () {
-        zombie = transform.parent.gameObject.GetComponent<ZombieAi>();
+        follow = transform.parent.gameObject.GetComponent<FollowAi>();
 	}
 	
 	// Update is called once per frame
@@ -18,7 +18,7 @@ public class EngagingSensor : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            zombie.setTarget(other.transform);
+            follow.setTarget(other.transform);
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ZombieAi : MonoBehaviour {
+public class FollowAi : MonoBehaviour {
     private Transform target = null;
     public float moveSpeed;
     private Animator animator;
