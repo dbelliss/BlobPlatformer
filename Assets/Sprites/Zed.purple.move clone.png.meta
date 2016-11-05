@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: f6730d082489b00448e164d8f9ad179c
+timeCreated: 1478330556
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Zed.purple.move clone_0
+    21300002: Zed.purple.move clone_1
+    21300004: Zed.purple.move clone_2
+    21300006: Zed.purple.move clone_3
+    21300008: Zed.purple.move clone_4
+    21300010: Zed.purple.move clone_5
+    21300012: Zed.purple.move clone_6
+    21300014: Zed.purple.move clone_7
+    21300016: Zed.purple.move clone_8
+    21300018: Zed.purple.move clone_9
+    21300020: Zed.purple.move clone_10
+    21300022: Zed.purple.move clone_11
+    21300024: Zed.purple.move clone_12
+    21300026: Zed.purple.move clone_13
+    21300028: Zed.purple.move clone_14
+    21300030: Zed.purple.move clone_15
+    21300032: Zed.purple.move clone_16
+    21300034: Zed.purple.move clone_17
+    21300036: Zed.purple.move clone_18
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Zed.purple.move clone_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1708
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1708
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_2
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1708
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_3
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1708
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1281
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_5
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1281
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_6
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 1281
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_7
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1281
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 854
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_9
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 854
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_10
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 854
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_11
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 854
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 427
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 427
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_14
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 427
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_15
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 427
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_17
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zed.purple.move clone_18
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 0
+        width: 427
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
