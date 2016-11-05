@@ -18,7 +18,7 @@ public class EngagingSensor : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            zombie.target = other.transform;
+            zombie.setTarget(other.transform);
         }
     }
 }

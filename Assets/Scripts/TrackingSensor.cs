@@ -18,7 +18,7 @@ public class TrackingSensor : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            zombie.target = null;
+            zombie.unsetTarget();
         }
     }
 }

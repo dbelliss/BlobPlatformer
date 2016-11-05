@@ -2,12 +2,14 @@
 using System.Collections;
 
 public class ZombieAi : MonoBehaviour {
-    public Transform target = null;
+    private Transform target = null;
     public float moveSpeed;
+    private Animator animator;
+    private bool moving = false;
 
     // Use this for initialization
     void Start () {
-
+        animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -34,21 +36,29 @@ public class ZombieAi : MonoBehaviour {
                     flip();
                 transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
             }
+            moving = true;
         }
+        else
+        {
+            moving = false;
+        }
+        animator.SetBool("isMoving", moving);
     }
-
-    //void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.tag == "Player")
-    //    {
-    //        target = other.transform;
-    //    }
-    //}
 
     void flip()
     {
         Vector3 temp = transform.localScale;
         temp.x *= -1;
         transform.localScale = temp;
+    }
+
+    public void setTarget(Transform target)
+    {
+        this.target = target;
+    }
+
+    public void unsetTarget()
+    {
+        target = null;
     }
 }
