@@ -35,7 +35,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -52,11 +52,14 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: IdleBlob_0
+    - serializedVersion: 2
+      name: IdleBlob_0
       rect:
         serializedVersion: 2
         x: 112
@@ -66,24 +69,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 144, y: -42}
-        - {x: 144, y: 42}
-        - {x: 112, y: 74}
-        - {x: 98, y: 74}
-        - {x: 98, y: 88}
-        - {x: -98, y: 88}
-        - {x: -130, y: 56}
-        - {x: -130, y: 42}
-        - {x: -144, y: 42}
-        - {x: -144, y: -42}
-        - {x: -112, y: -74}
-        - {x: -98, y: -74}
-        - {x: -98, y: -88}
-        - {x: 98, y: -88}
-        - {x: 130, y: -56}
-        - {x: 130, y: -42}
-    - name: IdleBlob_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlob_1
       rect:
         serializedVersion: 2
         x: 624
@@ -93,24 +82,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 144, y: -42}
-        - {x: 144, y: 42}
-        - {x: 112, y: 74}
-        - {x: 98, y: 74}
-        - {x: 98, y: 88}
-        - {x: -98, y: 88}
-        - {x: -130, y: 56}
-        - {x: -130, y: 42}
-        - {x: -144, y: 42}
-        - {x: -144, y: -42}
-        - {x: -112, y: -74}
-        - {x: -98, y: -74}
-        - {x: -98, y: -88}
-        - {x: 98, y: -88}
-        - {x: 130, y: -56}
-        - {x: 130, y: -42}
-    - name: IdleBlob_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlob_2
       rect:
         serializedVersion: 2
         x: 112
@@ -120,24 +95,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 144, y: -42}
-        - {x: 144, y: 42}
-        - {x: 112, y: 74}
-        - {x: 98, y: 74}
-        - {x: 98, y: 88}
-        - {x: -98, y: 88}
-        - {x: -130, y: 56}
-        - {x: -130, y: 42}
-        - {x: -144, y: 42}
-        - {x: -144, y: -42}
-        - {x: -112, y: -74}
-        - {x: -98, y: -74}
-        - {x: -98, y: -88}
-        - {x: 98, y: -88}
-        - {x: 130, y: -56}
-        - {x: 130, y: -42}
-    - name: IdleBlob_3
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlob_3
       rect:
         serializedVersion: 2
         x: 624
@@ -147,24 +108,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 144, y: -42}
-        - {x: 144, y: 42}
-        - {x: 112, y: 74}
-        - {x: 98, y: 74}
-        - {x: 98, y: 88}
-        - {x: -98, y: 88}
-        - {x: -130, y: 56}
-        - {x: -130, y: 42}
-        - {x: -144, y: 42}
-        - {x: -144, y: -42}
-        - {x: -112, y: -74}
-        - {x: -98, y: -74}
-        - {x: -98, y: -88}
-        - {x: 98, y: -88}
-        - {x: 130, y: -56}
-        - {x: 130, y: -42}
-    - name: IdleBlob_4
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlob_4
       rect:
         serializedVersion: 2
         x: 112
@@ -174,24 +121,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 144, y: -42}
-        - {x: 144, y: 42}
-        - {x: 112, y: 74}
-        - {x: 98, y: 74}
-        - {x: 98, y: 88}
-        - {x: -98, y: 88}
-        - {x: -130, y: 56}
-        - {x: -130, y: 42}
-        - {x: -144, y: 42}
-        - {x: -144, y: -42}
-        - {x: -112, y: -74}
-        - {x: -98, y: -74}
-        - {x: -98, y: -88}
-        - {x: 98, y: -88}
-        - {x: 130, y: -56}
-        - {x: 130, y: -42}
-    - name: IdleBlob_5
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: IdleBlob_5
       rect:
         serializedVersion: 2
         x: 624
@@ -201,23 +134,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 144, y: -42}
-        - {x: 144, y: 42}
-        - {x: 112, y: 74}
-        - {x: 98, y: 74}
-        - {x: 98, y: 88}
-        - {x: -98, y: 88}
-        - {x: -130, y: 56}
-        - {x: -130, y: 42}
-        - {x: -144, y: 42}
-        - {x: -144, y: -42}
-        - {x: -112, y: -74}
-        - {x: -98, y: -74}
-        - {x: -98, y: -88}
-        - {x: 98, y: -88}
-        - {x: 130, y: -56}
-        - {x: 130, y: -42}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 
