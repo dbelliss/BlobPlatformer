@@ -9,11 +9,13 @@ public class ChestInteract : MonoBehaviour {
     public float randomChanceMimic;
     public float reactionTime;
     private FollowAi follow;
+    private EngagingSensor engSensor;
 
 	// Use this for initialization
 	void Start () {
         animator = transform.parent.GetComponent<Animator>();
         follow = transform.parent.GetComponent<FollowAi>();
+        engSensor = transform.parent.FindChild("EngagingRadius").GetComponent<EngagingSensor>();
 
         if (isRandom)
         {
@@ -51,6 +53,7 @@ public class ChestInteract : MonoBehaviour {
         if (follow.engageTimer <= reactionTime && isMimic)
         {
             animator.SetBool("OpenMimic", true);
+            engSensor.setRadius(10.0f);
         }
     }
 
