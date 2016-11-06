@@ -6,6 +6,8 @@ public class FollowAi : MonoBehaviour {
     public float moveSpeed;
     private Animator animator;
     private bool moving = false;
+    public float engageTimer;
+    private bool isActive = true;
 
     // Use this for initialization
     void Start () {
@@ -19,20 +21,23 @@ public class FollowAi : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (target)
+        if (target && engageTimer <= 0.0f && isActive)
         {
             Vector3 targetDirection = target.position - transform.position;
             float flipValue = transform.localScale.x;
 
-            if (targetDirection.x < 0)
+            gameObject.tag = "Enemy";
+            gameObject.layer = 8;
+
+            if (targetDirection.x < 0.0f)
             {
-                if (flipValue < 0)
+                if (flipValue < 0.0f)
                     flip();
                 transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
             }
             else
             {
-                if (flipValue > 0)
+                if (flipValue > 0.0f)
                     flip();
                 transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
             }
@@ -43,6 +48,11 @@ public class FollowAi : MonoBehaviour {
             moving = false;
         }
         animator.SetBool("isMoving", moving);
+
+        if (target && engageTimer > 0.0f)
+        {
+            engageTimer -= Time.deltaTime;
+        }
     }
 
     void flip()
@@ -60,5 +70,15 @@ public class FollowAi : MonoBehaviour {
     public void unsetTarget()
     {
         target = null;
+    }
+
+    public void setTimer(float timeValue)
+    {
+        engageTimer = timeValue;
+    }
+
+    public void setActive(bool activeState)
+    {
+        isActive = activeState;
     }
 }
