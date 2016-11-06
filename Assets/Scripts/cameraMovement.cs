@@ -9,6 +9,9 @@ public class cameraMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         mainCamera = GetComponent<Transform> ();
+        Vector3 centerPlayer = player.position;
+        centerPlayer.z = mainCamera.position.z;
+        mainCamera.position = centerPlayer;
 		displacement = mainCamera.position - player.position;
 	}
 	
