@@ -10,12 +10,14 @@ public class ChestInteract : MonoBehaviour {
     public float reactionTime;
     private FollowAi follow;
     private EngagingSensor engSensor;
+    private SpriteRenderer spRender;
 
 	// Use this for initialization
 	void Start () {
         animator = transform.parent.GetComponent<Animator>();
         follow = transform.parent.GetComponent<FollowAi>();
         engSensor = transform.parent.FindChild("EngagingRadius").GetComponent<EngagingSensor>();
+        spRender = transform.parent.GetComponent<SpriteRenderer>();
 
         if (isRandom)
         {
@@ -44,7 +46,8 @@ public class ChestInteract : MonoBehaviour {
         else if (verticalDirection > 0 && interaction && isMimic)
         {
             animator.SetBool("OpenMimic", true);
-            surpriseOpenMimic();
+            interactOpenMimic();
+            spRender.sortingOrder = 1;
         }
     }
 
@@ -54,6 +57,7 @@ public class ChestInteract : MonoBehaviour {
         {
             animator.SetBool("OpenMimic", true);
             engSensor.setRadius(10.0f);
+            spRender.sortingOrder = 1;
         }
     }
 
@@ -71,7 +75,7 @@ public class ChestInteract : MonoBehaviour {
             interaction = false;
     }
 
-    public void surpriseOpenMimic()
+    public void interactOpenMimic()
     {
         follow.setTimer(reactionTime);
     }
