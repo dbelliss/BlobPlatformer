@@ -38,12 +38,12 @@ public class ChestInteract : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float verticalDirection = Input.GetAxis("Vertical");
-        if (verticalDirection > 0 && interaction && !isMimic)
+        bool playerInteract = Input.GetButtonDown("Interact");
+        if (playerInteract && interaction && !isMimic)
         {
             animator.SetBool("OpenRegular", true);
         }
-        else if (verticalDirection > 0 && interaction && isMimic)
+        else if (playerInteract && interaction && isMimic)
         {
             animator.SetBool("OpenMimic", true);
             interactOpenMimic();
