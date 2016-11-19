@@ -22,7 +22,7 @@ public class ItemSpawn : MonoBehaviour {
         if (spawned == false && animate.GetBool("OpenRegular"))
         {
             if (randomItems)
-                maxItems = Random.Range(1, maxItems);
+                maxItems = Random.Range(1, maxItems+1);
             StartCoroutine(spawnItems(0.5f));
             spawned = true;
         }
