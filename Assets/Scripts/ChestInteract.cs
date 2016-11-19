@@ -33,6 +33,11 @@ public class ChestInteract : MonoBehaviour {
                 follow.setActive(false);
             }
         }
+        else
+        {
+            isMimic = false;
+            follow.setActive(false);
+        }
 
     }
 	
