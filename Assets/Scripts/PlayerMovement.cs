@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D coll) {
-        if (coll.gameObject.layer == 9)
+        if (coll.gameObject.layer == LayerMask.NameToLayer("Environment") || coll.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
             touchedGround = true;
         }
