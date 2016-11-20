@@ -4,7 +4,7 @@ using System.Collections;
 public class PickUpItem : MonoBehaviour {
     //public Transform target;
     private Transform weaponHand;
-    private bool interaction;
+    private bool holdingItem = false;
 
 	// Use this for initialization
 	void Start () {
@@ -16,19 +16,15 @@ public class PickUpItem : MonoBehaviour {
 
     }
 
-    void OnCollisionStay2D(Collision2D coll)
+    void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.layer == LayerMask.NameToLayer("Item") && Input.GetButtonDown("Interact"))
+        if (!holdingItem && coll.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
             Destroy(coll.gameObject.GetComponent<Rigidbody2D>());
             coll.transform.parent = weaponHand;
             coll.transform.localPosition = new Vector3(0, 0, 0);
             coll.transform.localRotation = Quaternion.Euler(0, 0, -30);
+            holdingItem = true;
         }
-    }
-
-    void equipWeapon(Transform target)
-    {
-        weaponHand.position = target.position;
     }
 }
