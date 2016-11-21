@@ -26,7 +26,7 @@ public class MeleeAttack : MonoBehaviour {
             Destroy(coll.gameObject);
         }
 
-        else if (coll.gameObject.tag == "Enemy")
+        else if (isActive && coll.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
             pickUpItem.removeItem();
