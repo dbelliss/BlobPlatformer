@@ -5,6 +5,7 @@ public class MeleeAttack : MonoBehaviour {
     private Animator animator;
     private bool isActive;
     AnimatorStateInfo animState;
+    PickUpItem pickUpItem;
 
     // Use this for initialization
     void Start () {
@@ -24,6 +25,12 @@ public class MeleeAttack : MonoBehaviour {
         {
             Destroy(coll.gameObject);
         }
+
+        else if (coll.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
+            pickUpItem.removeItem();
+        }
     }
 
     public void setActive()
@@ -34,5 +41,10 @@ public class MeleeAttack : MonoBehaviour {
     public void setAnimator(Animator anim)
     {
         animator = anim;
+    }
+
+    public void setPickUpItem(PickUpItem pickItem)
+    {
+        pickUpItem = pickItem;
     }
 }

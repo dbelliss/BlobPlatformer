@@ -24,6 +24,7 @@ public class PickUpItem : MonoBehaviour {
             {
                 melAtt.setActive();
                 melAtt.setAnimator(GetComponent<Animator>());
+                melAtt.setPickUpItem(this);
             }
             Destroy(coll.gameObject.GetComponent<Rigidbody2D>());
             coll.transform.parent = weaponHand;
@@ -31,5 +32,10 @@ public class PickUpItem : MonoBehaviour {
             coll.transform.localRotation = Quaternion.Euler(0, 0, -30);
             holdingItem = true;
         }
+    }
+
+    public void removeItem()
+    {
+        holdingItem = false;
     }
 }
