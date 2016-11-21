@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class PickUpItem : MonoBehaviour {
-    //public Transform target;
     private Transform weaponHand;
     private bool holdingItem = false;
 
@@ -20,6 +19,12 @@ public class PickUpItem : MonoBehaviour {
     {
         if (!holdingItem && coll.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
+            MeleeAttack melAtt = coll.gameObject.GetComponent<MeleeAttack>();
+            if (melAtt)
+            {
+                melAtt.setActive();
+                melAtt.setAnimator(GetComponent<Animator>());
+            }
             Destroy(coll.gameObject.GetComponent<Rigidbody2D>());
             coll.transform.parent = weaponHand;
             coll.transform.localPosition = new Vector3(0, 0, 0);

@@ -22,11 +22,11 @@ public class PlayerDamaged : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "Spikes") {
-			Destroy (gameObject);
+			Destroy (transform.parent.gameObject);
 			PlayerMovement.isDead = true;
 		}
 		if (coll.gameObject.tag == "Enemy") {
-			Destroy (gameObject);
+			Destroy (transform.parent.gameObject);
 			PlayerMovement.isDead = true;
 		}
 
@@ -35,7 +35,7 @@ public class PlayerDamaged : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.tag == "Arrow") {
-			Destroy (gameObject);
+			Destroy (transform.parent.gameObject);
 			PlayerMovement.isDead = true;
 		}//If player is hit by arrow
 	}
