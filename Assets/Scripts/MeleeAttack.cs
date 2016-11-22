@@ -4,8 +4,8 @@ using System.Collections;
 public class MeleeAttack : MonoBehaviour {
     private Animator animator;
     private bool isActive;
-    AnimatorStateInfo animState;
-    PickUpItem pickUpItem;
+    private AnimatorStateInfo animState;
+    private PickUpItem pickUpItem;
 
     // Use this for initialization
     void Start () {
@@ -21,7 +21,7 @@ public class MeleeAttack : MonoBehaviour {
 
     void OnCollisionStay2D(Collision2D coll)
     {
-        if (isActive && coll.gameObject.tag == "Enemy" && animState.IsName("BlobAttack"))
+        if (isActive && coll.gameObject.tag == "Enemy" && (animState.IsName("BlobStab") || animState.IsName("BlobSlash")))
         {
             Destroy(coll.gameObject);
         }
